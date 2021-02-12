@@ -32,3 +32,7 @@ for HOSTNAME in ${HOSTS} ; do
         mv conf.txt ${RS}
 
 done
+git add .
+git commit -m "New config files"
+git push
+
