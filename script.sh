@@ -4,6 +4,7 @@ HOSTS=""
 SCRIPT="show run; exit"
 CONTROLVAR=""
 
+git pull
 while  [ "$CONTROLVAR" != "end" ] ; do
 	echo "THE DEFAULT USERNAME IS: admin"
 
@@ -32,7 +33,6 @@ for HOSTNAME in ${HOSTS} ; do
         mv conf.txt ${RS}
 
 done
-git pull
 git add .
 git commit -m "New config files"
 git push
