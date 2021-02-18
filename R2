@@ -1,7 +1,9 @@
 
 Building configuration...
 
-Current configuration : 1765 bytes
+Current configuration : 1839 bytes
+!
+! Last configuration change at 12:48:51 EET Thu Feb 18 2021
 !
 version 15.4
 service timestamps debug datetime msec
@@ -96,8 +98,7 @@ interface Serial1/0
  serial restart-delay 0
 !
 interface Serial1/1
- no ip address
- shutdown
+ ip address 10.10.18.1 255.255.255.0
  serial restart-delay 0
 !
 interface Serial1/2
